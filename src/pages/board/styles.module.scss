@@ -1,0 +1,142 @@
+.container {
+    max-width: 1120px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #14181f;
+    border-radius: 6px;
+
+    .warnText {
+        color: #FF8800;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.1rem;
+
+        button {
+            margin-left: 5px;
+            background: transparent;
+            border: 0;
+        }
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        
+        input {
+            width: 90%;
+            height: 50px;
+            background-color: #20212c;
+            border: 1px solid #424424;
+            border-radius: 6px;
+            padding: 3px 10px;
+            color: #FFF;
+        }
+
+        .taskNameError {
+            border-color: red;
+        }
+
+        button {
+            margin-left: 10px;
+            width: 8%;
+            height: 50px;
+            border: 0;
+            background-color: #FF8800;
+            border-radius: 6px;
+        }
+    }
+
+    .messageError {
+        font-size: small;
+        color: red;
+        margin-left: 0.3rem;
+    }
+
+    h1 {
+        color: #FFF;
+        margin-top: 1.8rem;
+
+        span {
+            color: #FF8800;
+        }
+    }
+
+    .taskList {
+        background-color: #20212c;
+        margin: 1rem 0;
+        padding: 0.7rem;
+        border-radius: 6px;
+
+        p {
+            cursor: pointer;
+            color: #f2f2f2;
+            font-size: 1rem;
+            line-height: 150%;
+        }
+
+        .actions {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                time {
+                    color: #FF8800;
+                    margin-left: 5px;
+                    margin-right: 1rem;
+                }
+            }
+
+            button {
+                background-color: transparent;
+                border: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+
+                & + button {
+                    margin-left: 10px;
+                }
+
+                span {
+                    margin-left: 5px;
+                    color: #FFF;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.vipContainer {
+    max-width: 1120px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #14181f;
+    border-radius: 6px;
+
+    h3 {
+        color: #FF8800;
+        font-size: 2rem;
+    }
+
+    div {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+
+        time {
+            color: #FFF;
+            font-size: 1.4rem;
+            padding: 10px;
+        }
+    }
+}
