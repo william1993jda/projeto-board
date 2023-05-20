@@ -55,7 +55,7 @@ export default function Donate({ user }: DonateProps) {
                 <h3>Contribua com apenas <span>R$ 1,00</span></h3>
                 <strong>Apareça na nossa home, tenha funcionalidades exclusivas.</strong>
                 <PayPalButtons 
-                    createOrder={ (data, actions)=> {
+                    createOrder={ (data, actions) => {
                         return actions.order.create({
                             purchase_units: [{
                                 amount: {
@@ -64,9 +64,10 @@ export default function Donate({ user }: DonateProps) {
                             }]
                         })
                     }}
-                    onApprove={ (data, actions) => {
+                    onApprove={ (data, actions: any) => {
+                        console.log(actions.order)
                         return actions.order.capture()
-                            .then(function(details) {
+                            .then(function(details: any) {
                                 handleSaveDonate()
                         })
                     }}
@@ -89,9 +90,9 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
     }
 
     const user = {
-        nome: session?.user.name,
+        nome: session?.user?.name,
         id: session?.id,
-        image: session?.user.image
+        image: session?.user?.image
     }
 
     return {

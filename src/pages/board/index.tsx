@@ -14,7 +14,7 @@ type TaskList = {
     created: string | Date;
     createdFormated?: string;
     tarefa: string;
-    userId: string;
+    userId?: string;
     nome: string;
     id: string;
 }
@@ -34,7 +34,7 @@ export default function Board({ user, data }: BoardProps) {
     const [messageErro, setMessageErro] = useState(false)
     const [taskList, setTaskList] = useState<TaskList[]>(JSON.parse(data))
 
-    const [taskEdit, setTaskEdit] = useState<TaskList | null>(null) 
+    const [taskEdit, setTaskEdit] = useState<TaskList | null | any>(null) 
 
     const handleAddTask = async (e: FormEvent) => {
         e.preventDefault()
@@ -229,7 +229,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, }) => {
     }))
 
     const user = {
-        nome: session?.user.name,
+        nome: session.user?.name,
         id: session?.id,
         vip: session?.vip,
         lastDonate: session?.lastDonate
