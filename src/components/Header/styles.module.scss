@@ -12,9 +12,11 @@
 
     img {
         cursor: pointer;
-        width: 160px;
         height: auto;
+    }
 
+    .logo {
+        width: 160px;
         @media (max-width: 414px) {
             width: 85px;
         }

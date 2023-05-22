@@ -12,7 +12,7 @@ export function Header() {
         <header className={styles.headerContainer}>
            <div className={styles.headerContent}>
             <Link href="/">
-                <Image src={logo} alt="logo meu board" />
+                <Image src={logo} className={styles.logo} alt="logo meu board" />
             </Link>
             <nav>
                 <Link href="/">
