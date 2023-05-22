@@ -4,7 +4,7 @@ import Image from 'next/image'
 import boardUser from '../../public/images/board-user.svg'
 import styles from '../styles/styles.module.scss'
 import { useState } from 'react'
-import firebase from 'firebase'
+import firebase from '../services/FireBaseConnection'
 
 type Data = {
   id: string,
