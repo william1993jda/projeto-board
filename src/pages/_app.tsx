@@ -7,7 +7,7 @@ import '../styles/global.scss'
 export default function App({ Component, pageProps }: AppProps) {
 
   const initialOptions = {
-    "client-id": "AfAuTclW3f9biQoKjT9Ac2kO5wSqA9h5rfvtGbbi4dbdKfqG7BBG6eO3X8u1RbnVnFLhsadAbXMj1fpw",
+    "client-id": "AfwebDYlfxrdVtLtDr6tVehJVY_CY7qadVqDiNd3_iPgDQjmdHBtiyQn6MA3Z7wTrxxeDVMVnPNjq-Aa",
     currency: "BRL",
     intent: "capture",
   }
