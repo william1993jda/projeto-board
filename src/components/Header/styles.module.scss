@@ -18,6 +18,10 @@
         margin-left: 5rem;
         height: 5rem;
 
+        @media (max-width: 414px) {
+            margin-left: 0;
+        }
+
         a {
             display: inline-block;
             position: relative;
@@ -28,6 +32,7 @@
             & + a {
                 margin-left: 2rem;
             }
+
             &:hover {
                 border-bottom: 2px solid #FF8800;
             }
