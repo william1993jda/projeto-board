@@ -8,6 +8,15 @@
     justify-content: center;
     flex-direction: column;
 
+    img {
+        max-width: 100%;
+    }
+
+    @media (max-width: 414px) {
+        text-align: center;
+        align-items: normal;
+    }
+
     h1 {
         margin: 1rem 0;
         font-size: 2.3rem;
