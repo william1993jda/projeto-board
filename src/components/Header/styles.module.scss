@@ -12,6 +12,12 @@
 
     img {
         cursor: pointer;
+        width: 160px;
+        height: auto;
+
+        @media (max-width: 414px) {
+            width: 85px;
+        }
     }
 
     nav {
@@ -28,6 +34,10 @@
             padding: 0 0.5rem;
             line-height: 5rem;
             color: #FFF;
+
+            @media (max-width: 414px) {
+                display: inline;
+            }
 
             & + a {
                 margin-left: 2rem;

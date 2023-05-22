@@ -24,6 +24,7 @@ export default function Home({ data }: HomePage) {
     <>
       <Head>
         <title>Board - organizando suas tarefas.</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico.png" />
       </Head>
     
       <main className={styles.contentContainer}>

@@ -3,7 +3,7 @@ import { useSession }  from 'next-auth/client'
 import styles from './styles.module.scss'
 import SigninButton from '../SigninButton'
 import Image from 'next/image'
-import logo from '../../../public/images/logo.svg'
+import logo from '../../../public/images/logo.png'
 
 export function Header() {
     const [session] = useSession()
@@ -20,7 +20,7 @@ export function Header() {
                 </Link>
                 {session && (
                     <Link href="/board">
-                        Meu board
+                        Board
                     </Link>
                 )}
             </nav>

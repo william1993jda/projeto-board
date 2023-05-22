@@ -45,6 +45,10 @@
             border: 0;
             background-color: #FF8800;
             border-radius: 6px;
+
+            @media (max-width: 414px) {
+                width: 20%;
+            }
         }
     }
 

@@ -4,6 +4,10 @@
     right: 50px;
     z-index: 99;
 
+    @media (max-width: 414px) {
+        right: 8px;
+    }
+
     button {
         border: 0;
         background-color: #FF8800;
