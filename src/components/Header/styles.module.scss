@@ -12,12 +12,7 @@
 
     img {
         cursor: pointer;
-        width: 160px;
-        height: auto;
-
-        @media (max-width: 414px) {
-            width: 85px;
-        }
+        
     }
 
     nav {
