@@ -43,6 +43,10 @@
 
             & + a {
                 margin-left: 2rem;
+
+                @media (max-width: 414px) {
+                    margin-left: 0;
+                }
             }
 
             &:hover {
